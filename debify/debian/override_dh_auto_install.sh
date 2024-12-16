@@ -23,9 +23,9 @@ cat > $file <<EOF
 zend_extension="${php_extdir}ioncube_loader_lin_${php_version}.so"
 EOF
 
-mkdir -p ${DEB_INSTALL_ROOT}/opt/cpanel/$scl/root/usr/share/doc/${full_package_name}
-cp LICENSE.txt ${DEB_INSTALL_ROOT}/opt/cpanel/$scl/root/usr/share/doc/${full_package_name}
-cp README.txt ${DEB_INSTALL_ROOT}/opt/cpanel/$scl/root/usr/share/doc/${full_package_name}
+mkdir -p ${DEB_INSTALL_ROOT}/opt/cpanel/$scl/root/usr/share/doc/${name}
+cp LICENSE.txt ${DEB_INSTALL_ROOT}/opt/cpanel/$scl/root/usr/share/doc/${name}
+cp README.txt ${DEB_INSTALL_ROOT}/opt/cpanel/$scl/root/usr/share/doc/${name}
 
 echo "FILELIST"
 find . -type f -print | sort
